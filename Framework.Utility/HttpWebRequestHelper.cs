@@ -10,7 +10,7 @@ namespace Framework.Utility
     /// <summary>
     /// HttpWebRequest帮助类
     /// </summary>
-    public class HttpWebRequestHelper
+    public partial class HttpWebRequestHelper
     {
         #region GET请求
         public T HttpGet<T>(string url)

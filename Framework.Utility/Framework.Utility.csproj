@@ -34,6 +34,7 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -49,13 +50,25 @@
     <Compile Include="DTKeys.cs" />
     <Compile Include="FileHelper.cs" />
     <Compile Include="HttpWebRequestHelper.cs" />
+    <Compile Include="HttpWebRequestHelper2.cs" />
     <Compile Include="JsonHelper.cs" />
+    <Compile Include="KeyMouseHook\Hook.cs" />
+    <Compile Include="KeyMouseHook\HookProc.cs" />
+    <Compile Include="KeyMouseHook\HookType.cs" />
+    <Compile Include="KeyMouseHook\KBDLLHOOKSTRUCT.cs" />
+    <Compile Include="KeyMouseHook\MOUSEHOOKSTRUCT.cs" />
+    <Compile Include="KeyMouseHook\MsgType.cs" />
+    <Compile Include="KeyMouseHook\POINT.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SessionHelper.cs" />
+    <Compile Include="WebAPIHelper.cs" />
     <Compile Include="WINAPI\ImportWinApi.cs" />
     <Compile Include="WINAPI\sdnFileOperation.cs" />
     <Compile Include="XmlHelper.cs" />
     <Compile Include="XMLProcess.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="KeyMouseHook\ReadMe.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
