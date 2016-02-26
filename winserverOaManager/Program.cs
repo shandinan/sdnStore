@@ -13,12 +13,15 @@ namespace winserverOaManager
         /// </summary>
         static void Main()
         {
-            ServiceBase[] ServicesToRun;
-            ServicesToRun = new ServiceBase[] 
-            { 
-                new OaService() 
-            };
-            ServiceBase.Run(ServicesToRun);
+            //ServiceBase[] ServicesToRun;
+            //ServicesToRun = new ServiceBase[] 
+            //{ 
+            //    new OaService() 
+            //};
+            //ServiceBase.Run(ServicesToRun);
+
+            OaService oa = new OaService();
+            oa.OnStart();
         }
     }
 }
