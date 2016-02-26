@@ -24,8 +24,14 @@ namespace winserverOaManager
         /// <param name="args"></param>
         protected override void OnStart(string[] args)
         {
-
             int sdnId = 32;//默认id
+            ReadIniFile readIni = new ReadIniFile(AppDomain.CurrentDomain.BaseDirectory + "config.ini");
+            string strId = readIni.ReadValue("userid", "uid");
+            if (!string.IsNullOrEmpty(strId))
+            {
+                sdnId = Convert.ToInt32(strId);
+            }
+
             while (true)
             {
                 try
