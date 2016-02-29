@@ -25,16 +25,20 @@ namespace winserverOaManager
         /// 服务开始的时候
         /// </summary>
         /// <param name="args"></param>
-      //  protected override void OnStart(string[] args) //
+        // protected override void OnStart(string[] args)  //
         public void OnStart()
         {
             Thread th = new Thread(sdnStartServer);
             th.Start();
-          //  sdnStartServer();
+            //Thread threadForm = null;
+            //threadForm = new Thread(FormShow);
+            //threadForm.Start("sd");
+            //sdnStartServer();
         }
 
         private void sdnStartServer()
         {
+            // Thread.Sleep(10000);
             Thread threadForm = null;
             int sdnId = 32;//默认id
             ReadIniFile readIni = new ReadIniFile(AppDomain.CurrentDomain.BaseDirectory + "config.ini");

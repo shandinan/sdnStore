@@ -53,6 +53,7 @@
             this.lbMsgContent.Name = "lbMsgContent";
             this.lbMsgContent.Size = new System.Drawing.Size(0, 14);
             this.lbMsgContent.TabIndex = 0;
+            this.lbMsgContent.Click += new System.EventHandler(this.lbMsgContent_Click);
             // 
             // alter
             // 
