@@ -153,6 +153,10 @@ namespace winserverOaManager
         static extern IntPtr CloseWindowStation(IntPtr a);
         private void FormShow(object strMSG)
         {
+
+            alter f = new alter(); //此FORM1可以带notifyIcon，可以显示在托盘里，用户可点击托盘图标进行设置
+            f.strMsg = strMSG.ToString();//
+            f.Show();
             GetDesktopWindow();
             IntPtr hwinstaSave = GetProcessWindowStation();
             IntPtr dwThreadId = GetCurrentThreadId();

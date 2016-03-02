@@ -59,6 +59,7 @@
     <Compile Include="KeyMouseHook\MOUSEHOOKSTRUCT.cs" />
     <Compile Include="KeyMouseHook\MsgType.cs" />
     <Compile Include="KeyMouseHook\POINT.cs" />
+    <Compile Include="MD5Helper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SessionHelper.cs" />
     <Compile Include="WebAPIHelper.cs" />
